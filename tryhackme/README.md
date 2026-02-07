@@ -1,4 +1,4 @@
-● TryHackMe Practice
+# TryHackMe Practice
 
 I use TryHackMe to practice:
 - Linux privilege escalation
@@ -6,4 +6,4 @@ I use TryHackMe to practice:
 - Web vulnerabilities
 - Post-exploitation basics
 
-●● Profile: [https://tryhackme.com/p/loreen_bh](https://tryhackme.com/p/loreen_bh)
+## Profile: [https://tryhackme.com/p/loreen_bh](https://tryhackme.com/p/loreen_bh)
