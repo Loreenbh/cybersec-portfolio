@@ -11,4 +11,4 @@ System administration and DevOps project focused on containerization using Docke
 
 ## Source code  
 Project developed within the 42 curriculum.  
-The source code is private, but can be shared upon request with recruiters.
+Configuration files and scripts are kept private in accordance with 42 guidelines.
