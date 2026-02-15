@@ -11,4 +11,4 @@ Implementation of an HTTP web server in C++ following RFC standards, as part of 
 
 ## Source code  
 Project developed within the 42 curriculum.  
-The source code is private, but can be shared upon request with recruiters.
+The source code is kept private in accordance with 42 guidelines.
