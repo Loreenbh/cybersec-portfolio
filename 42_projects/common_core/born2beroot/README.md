@@ -12,4 +12,4 @@ System administration project focused on setting up and securing a Linux server,
 
 ## Source code  
 Project developed within the 42 curriculum.  
-Configuration files and scripts are private, but can be shared upon request with recruiters.
+Configuration files and scripts are kept private in accordance with 42 guidelines.
