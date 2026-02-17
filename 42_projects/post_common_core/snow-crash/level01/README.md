@@ -20,7 +20,7 @@ The second field contains a 13-character encrypted string:
 Unlike modern systems that store hashes in `/etc/shadwow`, this one exposes the password 
 hash directly in `/etc/passwd`.
 
-##Exploitation
+## Exploitation
 The string `42hDRfypTqqnw` is a 13-character hash, whick indicates a legacy Unix DES-based hash.
 DES hashes:
 - Are 13 characters long
@@ -28,5 +28,5 @@ DES hashes:
 Since the format matches DES, we can se John The Ripper to crack it.
 ![John the Ripper cracking the DES hash](images/level01_crack-passwd.png)
 
-##Flag
+## Flag
 ![Level01 Flag Screenshot](images/level01_flag.png)
