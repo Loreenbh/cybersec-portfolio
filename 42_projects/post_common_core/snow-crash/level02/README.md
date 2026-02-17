@@ -20,6 +20,7 @@ scp -P 4243 level02@10.14.14.4:/home/user/level02/level02.pcap ~/Downloads/
 - Analyze the capture in Wireshark.
 - Follow the TCP stream of the Telnet session to extract credentials.
 - The passwords contains unwanted control characters(0x7f)
+
 ![Level02 Wireshark screenshot](images/wireshark_passwd.png)
 
 ## Flag
