@@ -26,7 +26,7 @@ DES hashes:
 - Are 13 characters long
 - Were historically stored directly inside `/etc/passwd`
 Since the format matches DES, we can se John The Ripper to crack it.
-![John the Ripper cracking the DES hash](images/level01_crack-passwd.png)
+![John the Ripper cracking the DES hash](images/crack-passwd.png)
 
 ## Flag
 ![Level01 Flag Screenshot](images/level01_flag.png)
