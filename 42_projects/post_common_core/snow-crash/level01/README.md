@@ -7,7 +7,9 @@ Recover the password for `flag01` by analyzing system files and cracking a DES h
 
 ```bash
 cat /etc/passwd
+...
 flag01:42hDRfypTqqnw:3001:3001::/home/flag/flag01:/bin/bash
+...
 ```
 
 The `/etc/passwd` file contained a 13-character DES hash for `flag01`. Unlike modern systems that store hashes in `/etc/shadow`, this legacy system exposes the hash directly in `/etc/passwd`.
