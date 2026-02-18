@@ -21,6 +21,7 @@ The goal of each level is to retrieve the flag by analyzing files, processes, an
 - Level03 - Privilege escalation via SUID binary and PATH hijacking
 - Level04 – Command injection via SUID Perl web script
 - Level05 - Exploiting scheduled script with arbitrary code execution
+- Level06 - Privilege escalation via PHP code injection
 
 ## Resources / Proofs
 - Screenshots and outputs for each level are stored in the `images/` folder.
