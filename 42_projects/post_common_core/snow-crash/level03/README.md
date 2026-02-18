@@ -5,8 +5,7 @@ Exploit a vulnerable SUID binary to execute code with `flag03` privileges.
 
 ## Reconnaissance
 The binary level03 is SUID and owned by `flag03`.
-Static and dynamic analysis (`strings`, `ltrace`) reveal the following call:
-This file contains network traffic to be analyzed.
+Static and dynamic analysis (`strings`, `ltrace`) reveal that the binary calls system(`/usr/bin/env echo Exploit me`), relying on the environment’s PATH to locate echo.
 ```bash
 system("/usr/bin/env echo Exploit me");
 ```
