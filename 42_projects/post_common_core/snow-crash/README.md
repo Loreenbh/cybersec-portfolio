@@ -16,7 +16,7 @@ The goal of each level is to retrieve the flag by analyzing files, processes, an
 
 ## Levels Covered
 - Level00 – Basic file enumeration and Caesar cipher decoding
-- Level01 - Extracting a password hash from `/etc/passwd` and cracking it with John the Ripper
+- Level01 - Extracting a password hash and cracking it with John the Ripper
 - Level02 - Telnet credential recovery via packet capture analysis
 - Level03 - Privilege escalation via SUID binary and PATH hijacking
 - Level04 – Command injection via SUID Perl web script
@@ -25,6 +25,7 @@ The goal of each level is to retrieve the flag by analyzing files, processes, an
 - Level07 - Command injection via environment variable in SUID binary
 - Level08 - Symlink bypass of filename-based access control in SUID binary
 - Level09 - Reversing a positional shift algorithm in a SUID binary
+- Level10 - TOCTOU race condition exploitation in SUID binary
 
 ## Resources / Proofs
 - Screenshots and outputs for each level are stored in the `images/` folder.
