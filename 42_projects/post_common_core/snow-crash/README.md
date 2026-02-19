@@ -24,6 +24,7 @@ The goal of each level is to retrieve the flag by analyzing files, processes, an
 - Level06 - Privilege escalation via PHP code injection
 - Level07 - Command injection via environment variable in SUID binary
 - Level08 - Symlink bypass of filename-based access control in SUID binary
+- Level09 - Reversing a positional shift algorithm in a SUID binary
 
 ## Resources / Proofs
 - Screenshots and outputs for each level are stored in the `images/` folder.
