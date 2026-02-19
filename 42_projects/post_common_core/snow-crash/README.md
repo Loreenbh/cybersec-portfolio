@@ -26,6 +26,7 @@ The goal of each level is to retrieve the flag by analyzing files, processes, an
 - Level08 - Symlink bypass of filename-based access control in SUID binary
 - Level09 - Reversing a positional shift algorithm in a SUID binary
 - Level10 - TOCTOU race condition exploitation in SUID binary
+- Level11 - Command injection in a local SUID Lua service
 
 ## Resources / Proofs
 - Screenshots and outputs for each level are stored in the `images/` folder.
