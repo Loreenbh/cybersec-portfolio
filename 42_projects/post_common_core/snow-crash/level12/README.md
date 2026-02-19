@@ -6,7 +6,7 @@ Exploit a vulnerable SUID Perl CGI script to execute arbitrary commands and retr
 ## Reconnaissance
 - `level12.pl` runs as SUID (`flag12`)
 - Web service listening on `localhost:4646`
-- User-controlled parameter `x` is injected into:
+- Parameter `x` is injected into:
 ```bash
 @output = `egrep "^$xx" /tmp/xd 2>&1`;
 ```
@@ -14,6 +14,8 @@ Exploit a vulnerable SUID Perl CGI script to execute arbitrary commands and retr
 This leads to command injection via backticks.
 
 ## Exploitation
+Because input is uppercased, the payload must be uppercase.
+`*` is used as a wildcard to avoid hardcoding `/tmp` while still resolving `/tmp/GETTHEFLAG`.
 1. Create a malicious script:
 ```bash
 echo '#!/bin/sh' > /tmp/GETTHEFLAG
