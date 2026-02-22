@@ -13,9 +13,7 @@ This 13-character string is a legacy Unix DES hash, exposed directly in `/etc/pa
 ## Exploitation
 The string `42hDRfypTqqnw` is a 13-character hash, whick indicates a legacy Unix DES-based hash.
 Since the format matches DES, we can use John The Ripper to crack it.
-
 ![John the Ripper cracking the DES hash](images/crack-passwd.png)
 
 ## Flag
-
 ![Level01 Flag Screenshot](images/level01_flag.png)
