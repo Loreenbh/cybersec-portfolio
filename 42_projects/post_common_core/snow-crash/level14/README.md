@@ -22,19 +22,21 @@ break ptrace
 break getuid
 run
 ```
-1. Force `ptrace()` to return `0` to bypass anti-debugging:
+- Force `ptrace()` to return `0` to bypass anti-debugging:
 ```bash
 finish
 set $eax = 0
 continue
 ```
-2. Force `getuid()` to return the expected UID:
+- Force `getuid()` to return the expected UID:
 ```bash
 finish
 set $eax = 3014
 continue
 ```
-This bypasses internal protections and allows the binary to print the flag.
+- `eax` holds the function return value on x86.
+- Overwriting it bypasses both security checks.
+The binary proceeds normally and prints the final flag.
 
 ## Flag
 ![Level14 Flag Screenshot](images/level14_flag.png)
