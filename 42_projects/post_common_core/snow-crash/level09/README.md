@@ -11,16 +11,17 @@ Testing the binary with controlled input reveals a deterministic positional shif
 ```bash
 encrypted_char = original_char + index
 ```
-Each character is incremented by its position in the string.
-This indicates a simple, reversible encoding scheme rather than real encryption.
+- Each character is incremented by its position in the string.
+- This indicates a simple, reversible encoding scheme rather than strong encryption.
+- The `token` file contains non-printable bytes, suggesting it was processed using the same algorithm.
 
-The `token` file contains non-printable bytes, suggesting it was processed using the same algorithm.
-
-## Exploitation
-To recover the original value:
+### Vulnerability
+- The algorithm is reversible using the formula:
 ```bash
 original_char = encrypted_char - index
 ```
+
+## Exploitation
 A Bash script was used to reverse the transformation byte-by-byte:
 ```bash
 #!/bin/bash
@@ -37,7 +38,7 @@ do
 done
 echo
 ```
-The script reconstructs the original clear-text flag.
+- The script reconstructs the original clear-text flag.
 
 ## Flag
 ![Level09 Flag Screenshot](images/level09_flag.png)
