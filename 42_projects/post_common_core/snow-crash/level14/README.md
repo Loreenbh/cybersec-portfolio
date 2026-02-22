@@ -7,12 +7,12 @@ Bypass anti-debugging and UID checks in the `getflag` SUID binary to retrieve th
 - Target binary: `/bin/getflag` (ELF 32-bit, not stripped).
 - `ltrace` reveals an anti-debugging mechanism using `ptrace()`.
 Disassembly shows:
-A call to `ptrace()` to prevent tracing.
-A call to `getuid()` followed by comparisons against expected UIDs.
+- A call to `ptrace()` to prevent tracing.
+- A call to `getuid()` followed by comparisons against expected UIDs.
 The program exits if either check fails.
 
 ## Exploitation
-Using GDB, intercept critical function calls:
+Using `gdb`, intercept and modify the return values of critical functions:
 ```bash
 gdb /bin/getflag
 ```
